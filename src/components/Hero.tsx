@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard"
 
 export default function Hero() {
     return (
-        <section className="w-full min-h-screen overflow-hidden flex">
+        <section className="w-full min-h-screen overflow-hidden flex bg-[#F6F6F6]">
             {/* Left */}
             <div className="flex flex-col pl-10 pb-6 justify-end w-1/2 gap-20">
                 <div className="space-y-4">
@@ -17,8 +17,22 @@ export default function Hero() {
                 </div>
             </div>
             {/* Right */}
-            <div className="">
+            <div className="w-1/2 relative pb-6 flex items-center">
+                <div className="absolute top-28 left-40 z-50">
+                    <h1 className="text-6xl font-semibold text-left">
+                        Electrifying <br />
+                        Innovation for a <br />
+                        <span className="text-gray-400">Sustainable <br /> World.</span>
+                    </h1>
+                </div>
 
+                <div className="absolute top-28 right-6 z-50">
+                    <img src="/images/hero-cta.svg" alt="Hero CTA" className="w-30 h-30" />
+                </div>
+
+                <div className="absolute bottom-0 right-30 pb-12 scale-125">
+                    <img src="/images/hero-main.png" alt="Hero image" className="w-full h-full object-contain scale-110" />
+                </div>
             </div>
         </section>
     )

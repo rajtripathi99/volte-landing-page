@@ -14,8 +14,7 @@ export default function FeatureCard({
                 alt={alt}
                 className="h-full w-full object-cover"
             />
-
-            <div className="absolute bottom-4 left-4 flex items-center gap-6 rounded-lg bg-white px-3 py-2 shadow-sm">
+            <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-lg bg-white px-4 py-2 shadow-sm">
                 <span className="text-lg font-bold text-black">
                     Read More
                 </span>
