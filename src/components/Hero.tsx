@@ -1,4 +1,4 @@
-import { MoveRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import FeatureCard from "./FeatureCard"
 
 export default function Hero() {
@@ -9,7 +9,7 @@ export default function Hero() {
                 <div className="space-y-4">
                     <h1 className="text-3xl font-bold">Recharge Faster, Travel Further</h1>
                     <p className="text-lg text-[#4F4F4F]">Join the movement toward seamless electric vehicle <br />charging with stations that are easy to find and always <br /> ready when you are.</p>
-                    <button className="flex gap-2 bg-black text-white px-4 py-3 rounded-md">Order Now <MoveRight /></button>
+                    <button className="flex gap-2 items-center bg-black text-white px-4 py-3 rounded-md">Order Now <ArrowRight className='h-5 w-5' /></button>
                 </div>
                 <div className="flex gap-4">
                     <FeatureCard image="images/feature-left.png" alt="Feature image" />
