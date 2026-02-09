@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-    <main className="relative w-screen overflow-x-hidden">
+    <main className="relative w-full overflow-x-hidden">
       <Navbar />
       <Hero />
       <BentoGrid />
