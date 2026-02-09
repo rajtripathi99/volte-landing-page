@@ -25,11 +25,9 @@ export default function Hero() {
                         <span className="text-gray-400">Sustainable <br /> World.</span>
                     </h1>
                 </div>
-
                 <div className="absolute top-28 right-6 z-50">
                     <img src="/images/hero-cta.svg" alt="Hero CTA" className="w-30 h-30" />
                 </div>
-
                 <div className="absolute bottom-0 right-30 pb-12 scale-125">
                     <img src="/images/hero-main.png" alt="Hero image" className="w-full h-full object-contain scale-110" />
                 </div>
