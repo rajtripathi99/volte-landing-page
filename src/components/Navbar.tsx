@@ -8,11 +8,11 @@ const Navbar = () => {
                     <span className='text-2xl font-bold'>VOLTE.</span>
                 </div>
                 <div className='flex gap-8 border border-gray-200 px-4 py-2 rounded-md bg-white text-[#4F4F4F]'>
-                    <span>About Us</span>
-                    <span className='flex gap-1 items-center'>Product <ChevronDown className='text-[#4F4F4F] h-5 w-5' /></span>
-                    <span>Client</span>
-                    <span>Services</span>
-                    <span>Contact</span>
+                    <a href="#about">About Us</a>
+                    <a className='flex gap-1 items-center'>Product <ChevronDown className='text-[#4F4F4F] h-5 w-5' /></a>
+                    <a href="#client">Client</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
             <div className='flex gap-2'>
