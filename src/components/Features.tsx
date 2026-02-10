@@ -5,7 +5,7 @@ const Features = () => {
             <div className="flex items-center justify-between px-4">
                 {/* Left */}
                 <div>
-                    <h1 className="text-3xl font-semibold">We're More Than Just <br /> Charging <span className="text-gray-400">We're Your Road<br /> Companion</span></h1>
+                    <h1 className="text-3xl font-semibold">We're More Than Just <br /> Charging <span className="text-[#828282]">We're Your Road<br /> Companion</span></h1>
                 </div>
                 {/* Right */}
                 <div className="flex items-center gap-12">

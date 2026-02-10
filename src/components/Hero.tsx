@@ -22,7 +22,7 @@ export default function Hero() {
                     <h1 className="text-6xl font-semibold text-left">
                         Electrifying <br />
                         Innovation for a <br />
-                        <span className="text-gray-400">Sustainable <br /> World.</span>
+                        <span className="text-[#828282]">Sustainable <br /> World.</span>
                     </h1>
                 </div>
                 <div className="absolute top-28 right-6 z-50">

@@ -30,7 +30,7 @@ const BentoGrid = () => {
                     </div>
                     {/* Bottom */}
                     <div className="flex items-center justify-between bg-white rounded-3xl p-8 flex-[0.3] border border-gray-200">
-                        <h1 className="text-4xl font-semibold">Your Charging<br /> <span className="text-gray-400">Experience, Elevated</span></h1>
+                        <h1 className="text-4xl font-semibold">Your Charging<br /> <span className="text-[#828282]">Experience, Elevated</span></h1>
                         <img src="/images/bento-bottom-right.png" alt="bento-bottom-right" />
                     </div>
                 </div>

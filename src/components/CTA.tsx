@@ -4,7 +4,7 @@ const CTA = () => {
             {/* Left Card */}
             <div className="bg-white border border-gray-200 rounded-3xl p-12 flex flex-col justify-center gap-10 h-[500px] w-[40%]">
                 <div className="space-y-4">
-                    <h1 className="text-4xl font-semibold">Power Up Without <br /> <span className="text-gray-400">Breaking The Bank</span></h1>
+                    <h1 className="text-4xl font-semibold">Power Up Without <br /> <span className="text-[#828282]">Breaking The Bank</span></h1>
                     <p className="text-gray-500 text-md">Affordable charging made simple! Whether you <br /> need a one-time boost or a subscription plan.</p>
                 </div>
                 <div className="flex items-center gap-12">
