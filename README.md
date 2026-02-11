@@ -75,7 +75,7 @@ This will generate optimized static files in the `dist` directory.
 
 -   **Mobile-First**: The layout starts with a stacked mobile view and progressively enhances to multi-column layouts for tablets and desktops.
 -   **Bento Grid**: Used to display information in a structured, easily scannable format.
--   **Typography**: "Inter" font selected for high readability and a modern look.
+-   **Typography**: "Outfit" font selected for high readability and a modern look.
 
 ## 📄 License
 
