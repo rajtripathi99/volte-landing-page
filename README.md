@@ -1,73 +1,82 @@
-# React + TypeScript + Vite
+# VOLTE - EV Charging Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance landing page for an Electric Vehicle (EV) charging solution. This project showcases a fully responsive design with a clean aesthetic, featuring a bento grid layout and interactive elements.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   **Fully Responsive**: Optimized for Mobile (375px+), Tablet (768px+), and Desktop (1024px+) devices.
+-   **Modern UI/UX**: clean typography (Inter font), whitespace utilization, and a premium "tech" feel.
+-   **Interactive Elements**: Hover effects, mobile hamburger menu, and smooth layout transitions.
+-   **Component-Based**: Modular architecture using React components.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   **Framework**: [React 19](https://react.dev/)
+-   **Build Tool**: [Vite](https://vitejs.dev/)
+-   **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+-   **Language**: [TypeScript](https://www.typescriptlang.org/)
+-   **Icons**: [Lucide React](https://lucide.dev/) & [React Social Icons](https://jaketrent.github.io/react-social-icons/)
+-   **Fonts**: Outfit (Google Fonts)
 
-## Expanding the ESLint configuration
+## 📂 Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+src/
+├── components/         # UI Components
+│   ├── Navbar.tsx      # Responsive navigation with mobile menu
+│   ├── Hero.tsx        # Hero section with headline and imagery
+│   ├── FeatureCard.tsx # Reusable feature/stat cards
+│   ├── BentoGrid.tsx   # Grid layout for primary content
+│   ├── Features.tsx    # Statistical and feature highlights
+│   ├── CTA.tsx         # Call to Action section
+│   └── Footer.tsx      # Footer with links and social icons
+├── App.tsx             # Main application entry
+├── main.tsx            # React root
+└── index.css           # Global styles and Tailwind directives
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚡ Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Prerequisites
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Ensure you have [Node.js](https://nodejs.org/) installed (version 18+ recommended).
+
+### Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/volte-landing-page.git
+    cd volte-landing-page
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3.  Start the development server:
+    ```bash
+    npm run dev
+    ```
+
+4.  Open your browser and navigate to `http://localhost:5173`.
+
+### Building for Production
+
+To create a production-ready build:
+
+```bash
+npm run build
 ```
+
+This will generate optimized static files in the `dist` directory.
+
+## 🎨 Design Decisions
+
+-   **Mobile-First**: The layout starts with a stacked mobile view and progressively enhances to multi-column layouts for tablets and desktops.
+-   **Bento Grid**: Used to display information in a structured, easily scannable format.
+-   **Typography**: "Inter" font selected for high readability and a modern look.
+
+## 📄 License
+
+This project is licensed under the MIT License.
