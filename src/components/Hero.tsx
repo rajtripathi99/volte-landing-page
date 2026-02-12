@@ -3,22 +3,21 @@ import FeatureCard from "./FeatureCard"
 
 export default function Hero() {
     return (
-        <section className="w-full min-h-screen overflow-hidden flex flex-col md:flex-row bg-[#F6F6F6]">
+        <section className="w-full min-h-auto md:min-h-screen overflow-hidden flex flex-col md:flex-row bg-[#F6F6F6]">
             {/* Mobile: headline + car image on top */}
-            <div className="md:hidden relative w-full pt-16 pl-4">
-                <div className="flex items-start justify-between mb-4">
+            <div className="md:hidden w-full pt-16">
+                <div className="flex items-start justify-between mb-4 px-4">
                     <h1 className="text-3xl font-semibold text-left mt-6">
                         Electrifying <br />
                         Innovation for a <br />
                         <span className="text-[#828282]">Sustainable <br /> World.</span>
                     </h1>
-                    <img src="/images/hero-cta.svg" alt="Hero CTA" className="hidden md:block w-10 h-10 mt-1" />
+                    <img src="/images/hero-cta.svg" alt="Hero CTA" className="w-25 h-25 mt-6" />
                 </div>
-                <div className="flex justify-end">
-                    <img src="/images/hero-main.png" alt="Hero image" className="w-[85%] object-contain" />
+                <div className="w-full">
+                    <img src="/images/hero-main.png" alt="Hero image" className="w-full object-contain" />
                 </div>
             </div>
-
             {/* Mobile: bottom content */}
             <div className="md:hidden flex flex-col px-4 pb-6 gap-6">
                 <div className="space-y-4">
